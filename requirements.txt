@@ -5,3 +5,4 @@ docling
 huggingface_hub
 paddleocr
 onnxruntime
+flask
