@@ -14,12 +14,12 @@ import time
 # Cell 2: PDF Upload and OCR to JSON
 # Helper: create pipeline options
 # Step 1: Download PaddleOCR ONNX models once at script start
-print("Downloading PaddleOCR models for ONNX backend...")
-download_path = snapshot_download(repo_id="SWHL/RapidOCR")
-det_model_path = os.path.join(download_path, "PP-OCRv4", "en_PP-OCRv3_det_infer.onnx")
-rec_model_path = os.path.join(download_path, "PP-OCRv4", "ch_PP-OCRv4_rec_server_infer.onnx")
-cls_model_path = os.path.join(download_path, "PP-OCRv3", "ch_ppocr_mobile_v2.0_cls_train.onnx")
-print("PaddleOCR models downloaded and paths set.")
+# print("Downloading PaddleOCR models for ONNX backend...")
+# download_path = snapshot_download(repo_id="SWHL/RapidOCR")
+# det_model_path = os.path.join(download_path, "PP-OCRv4", "en_PP-OCRv3_det_infer.onnx")
+# rec_model_path = os.path.join(download_path, "PP-OCRv4", "ch_PP-OCRv4_rec_server_infer.onnx")
+# cls_model_path = os.path.join(download_path, "PP-OCRv3", "ch_ppocr_mobile_v2.0_cls_train.onnx")
+# print("PaddleOCR models downloaded and paths set.")
 
 def create_pipeline_options(ocr_backend: str, accelerator_device: AcceleratorDevice):
     ocr_backend = ocr_backend.lower()
