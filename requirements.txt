@@ -1,0 +1,7 @@
+streamlit
+requests
+PyPDF2
+docling
+huggingface_hub
+paddleocr
+onnxruntime
