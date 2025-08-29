@@ -3,9 +3,9 @@ requests
 PyPDF2
 docling
 huggingface_hub
-# paddleocr
+paddleocr
 onnxruntime
-# torch
-# torch-cuda
-# cudatoolkit
+torch
+torch-cuda
+cudatoolkit
 flask
